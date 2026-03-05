@@ -1,4 +1,3 @@
--- teste3
 create table POC.DEV.gold_DIM_customers (
                 customer_sk bigint autoincrement,
                 customer_id varchar(20),
