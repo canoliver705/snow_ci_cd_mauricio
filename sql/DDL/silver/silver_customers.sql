@@ -1,4 +1,3 @@
--- teste 2026-03-05
 create table if not exists poc.dev.silver_customers
 (
 customer_id string,
