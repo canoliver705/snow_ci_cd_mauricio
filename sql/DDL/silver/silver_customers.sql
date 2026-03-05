@@ -1,3 +1,4 @@
+-- teste2
 create table if not exists POC.DEVsilver_customers
 (
 customer_id string,
