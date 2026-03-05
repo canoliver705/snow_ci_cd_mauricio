@@ -41,7 +41,7 @@ jobs:
         run: |
           set -e
           if git rev-parse HEAD~1 >/dev/null 2>&1; then
-            MODIFIED_FILES=$(git diff --name-only HEAD~1 HEAD | grep '\.sql$' || true)
+            MODIFIED_FILES=$(find sql -name "*.sql")
           else
             MODIFIED_FILES=$(git show --pretty="" --name-only HEAD | grep '\.sql$' || true)
           fi
@@ -115,7 +115,7 @@ jobs:
         run: |
           set -e
           if git rev-parse HEAD~1 >/dev/null 2>&1; then
-            MODIFIED_FILES=$(git diff --name-only HEAD~1 HEAD | grep '\.sql$' || true)
+            MODIFIED_FILES=$(find sql -name "*.sql")
           else
             MODIFIED_FILES=$(git show --pretty="" --name-only HEAD | grep '\.sql$' || true)
           fi
@@ -188,7 +188,7 @@ jobs:
         run: |
           set -e
           if git rev-parse HEAD~1 >/dev/null 2>&1; then
-            MODIFIED_FILES=$(git diff --name-only HEAD~1 HEAD | grep '\.sql$' || true)
+            MODIFIED_FILES=$(find sql -name "*.sql")
           else
             MODIFIED_FILES=$(git show --pretty="" --name-only HEAD | grep '\.sql$' || true)
           fi
