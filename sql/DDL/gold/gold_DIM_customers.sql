@@ -1,4 +1,4 @@
-create table POC.DEV.gold_DIM_customers (
+create table gold_DIM_customers (
                 customer_sk bigint autoincrement,
                 customer_id varchar(20),
                 company_name varchar(100),

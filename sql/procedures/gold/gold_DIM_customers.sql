@@ -4,7 +4,7 @@ language SQL
 as 
 $$
 begin
-    merge into POC.DEV.gold_dim_customers g
+    merge into gold_dim_customers g
                 using (
             
                 select 
@@ -27,7 +27,7 @@ begin
                         nvl(PHONE,'')           || '|' || 
                         nvl(POSTAL_CODE,'')
                         ) as hash_diff
-                from POC.DEV.silver_customers
+                from silver_customers
                 ) s
             
                 on g.customer_id = s.customer_id

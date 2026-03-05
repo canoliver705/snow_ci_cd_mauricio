@@ -5,9 +5,9 @@ as
 $$
 begin
 
-    truncate table POC.DEV.bronze_customers;
+    truncate table bronze_customers;
 
-    insert into POC.DEV.bronze_customers
+    insert into bronze_customers
         select distinct        
             cast($1 as variant) as row_data,
             metadata$filename,
