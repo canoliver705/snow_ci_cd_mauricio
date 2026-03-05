@@ -12,4 +12,4 @@ create table POC.DEV.gold_DIM_customers (
                 fax varchar(100),          
                 hash_diff varchar(300),
                 creat_at timestamp_ntz default current_timestamp());
--- teste3
+-- teste4
