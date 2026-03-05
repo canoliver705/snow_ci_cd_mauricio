@@ -4,8 +4,8 @@ language SQL
 as 
 $$
 begin
-    truncate table silver_customers;
-        insert into silver_customers(
+    truncate table POC.DEV.silver_customers;
+        insert into POC.DEV.silver_customers(
             select 
                 $1:"customer_id":: string as customer_id, 
                 upper($1:"company_name":: string) as company_name,
