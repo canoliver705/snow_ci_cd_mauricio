@@ -1,4 +1,4 @@
-create table if not exists poc.dev.silver_customers
+create table if not exists POC.DEVsilver_customers
 (
 customer_id string,
 company_name string,
