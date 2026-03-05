@@ -1,5 +1,5 @@
 -- teste2
-create table if not exists POC.DEVsilver_customers
+create table if not exists POC.DEV.silver_customers
 (
 customer_id string,
 company_name string,
