@@ -1,4 +1,3 @@
--- teste 2026-03-05
 create table poc.dev.gold_DIM_customers (
                 customer_sk bigint autoincrement,
                 customer_id varchar(20),
