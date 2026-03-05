@@ -4,3 +4,4 @@ create table if  not exists bronze_customers
     filename string,
     creat_at timestamp    
 );
+-- teste
