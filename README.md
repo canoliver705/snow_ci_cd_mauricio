@@ -43,7 +43,7 @@ git push origin feature/my-new-view
 
 Open a Pull Request to main when ready for production deployment.
 
-Note:
+### Note:
 
 The pipeline ensures QA only runs after a successful DEV deploy.
 Production deploys only occur after merging into main.
