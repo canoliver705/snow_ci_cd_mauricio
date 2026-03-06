@@ -14,10 +14,14 @@ After review, merge into main to trigger deployment to PRD.
 Required Secrets
 The following secrets must be configured in your repository settings:
 
-#### SNOWSQL_ACCOUNT
-#### SNOWSQL_USER
-#### SNOWSQL_PWD
-### Running the Pipeline Manually
+SNOWSQL_ACCOUNT
+
+SNOWSQL_USER
+
+SNOWSQL_PWD
+
+Running the Pipeline Manually
+
 You can manually trigger the pipeline from the "Actions" tab in GitHub.
 
 Adding New SQL Scripts
@@ -32,8 +36,11 @@ git checkout -b feature/my-new-view
 
 # Edit or add your .sql files
 git add sql/views/my_new_view.sql
-git commit -m "feat: add my new view script"
+
+git commit -m "feat: add my new view script
+
 git push origin feature/my-new-view
+
 Open a Pull Request to main when ready for production deployment.
 
 Note:
