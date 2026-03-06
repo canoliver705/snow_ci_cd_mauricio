@@ -1,6 +1,4 @@
-Automated Snowflake View Deployment
-CI/CD with GitHub Actions
-This project uses GitHub Actions to automate the deployment of SQL scripts to different environments in Snowflake:
+# Automated Snowflake View Deployment CI/CD with GitHub Actions This project uses GitHub Actions to automate the deployment of SQL scripts to different environments in Snowflake:
 
 DEV: Runs scripts in the DEV schema on every push to any branch (except main).
 QA: Runs scripts in the QA schema only after a successful deploy to DEV.
