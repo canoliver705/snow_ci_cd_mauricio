@@ -12,4 +12,3 @@ create table gold_DIM_customers (
                 fax varchar(100),          
                 hash_diff varchar(300),
                 creat_at timestamp_ntz default current_timestamp());
---aula arruda 2026-03-07
