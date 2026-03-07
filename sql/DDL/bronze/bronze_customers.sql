@@ -4,4 +4,4 @@ create table if  not exists bronze_customers
     filename string,
     creat_at timestamp    
 );
--- teste2
+--aula arruda 2026-03-07
